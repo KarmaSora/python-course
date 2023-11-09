@@ -1,0 +1,269 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Lab 5 - python</title>
+<style>
+html {
+    overflow-y: scroll;
+}
+
+body {
+    margin: 8px auto;
+    max-width: 700px;
+}
+
+h2 {
+    line-height: 2.5em;
+    border-bottom: 1px solid #aaa;
+}
+
+h3 {
+    line-height: 2.5em;
+    border-bottom: 1px solid #ccc;
+}
+
+p {
+    margin-bottom: 22px;
+}
+
+div.answer {
+  font-family: "Courier New", monospace;
+  white-space: pre;
+  margin-bottom: 1em;
+}
+
+.fail {
+    color: red;
+}
+
+.success {
+    color: green;
+}
+
+.nopass {
+    color: olive;
+}
+
+.pass {
+    color: green;
+}
+
+.passdistinct {
+    color: DarkGoldenRod;
+}
+table, th, td {
+    border: 1px solid #666;
+}
+
+code {
+    background-color: #eee;
+    border: 1px solid #999;
+    padding: 1px;
+    font-size: larger;
+}
+
+pre code {
+    display: block;
+    background-color: #eee;
+    border: none;
+    border-left: 2px solid #999;
+    padding: 0.5em;
+    margin-bottom: 22px;
+}
+</style>
+</head>
+<body>
+
+<pre>
+f60f1c9ce548d1bec995e3ff5b92a0cc
+python
+lab5
+v4
+kamt23
+2023-09-28 13:15:16
+v4.0.0 (2019-03-05)
+</pre>
+
+<p><i>Generated 2023-09-28 15:15:16 by <a href="https://github.com/dbwebb-se/lab">dbwebb lab-utility</a> v4.0.0 (2019-03-05).</i></p>
+<hr>
+
+<h1>Lab 5 - python</h1>
+<p>A look into dictionaries and tuples.</p>
+
+
+<h2>1. Dictionaries</h2>
+<p>Some basics with dictionaries.</p>
+
+
+<h3>Exercise 1.1 (1 points)</h3>
+<p>Create a small phonebook using a dictionary. Use the names as keys and numbers as values.</p>
+
+<p>Use</p>
+
+<blockquote>
+  <p>Baggins, Aragorn, Smaug</p>
+</blockquote>
+
+<p>and corresponding numbers</p>
+
+<blockquote>
+  <p>55523412, 55564222, 55567894</p>
+</blockquote>
+
+<p>Add the phonenumbers as integers. Answer with the resulting dictionary.</p>
+
+
+
+
+
+
+<h3>Exercise 1.2 (1 points)</h3>
+<p>How many items are there in the phonebook dictionary?</p>
+
+
+
+
+
+
+<h3>Exercise 1.3 (1 points)</h3>
+<p>Use the <code>get()</code> method on your phonebook and answer with the phonenumber of &#8216;Baggins&#8217;.</p>
+
+
+
+
+
+
+<h3>Exercise 1.4 (1 points)</h3>
+<p>Get all keys from the phonebook dictionary and return them in a sorted list.</p>
+
+
+
+
+
+
+<h3>Exercise 1.5 (1 points)</h3>
+<p>Get all values from the phonebook dictionary and return them in a sorted list.</p>
+
+
+
+
+
+
+<h3>Exercise 1.6 (1 points)</h3>
+<p>Use the in-operator to test if the name &#8216;Baggins&#8217; exists in the phonebook dictionary. Answer with the return boolean value.</p>
+
+
+
+
+
+
+<h3>Exercise 1.7 (1 points)</h3>
+<p>Create a copy of the phonebook dictionary.
+Get and remove the item &#8216;Baggins&#8217; from the copied phonebook (use pop()). Answer with the resulting dictionary.</p>
+
+
+
+
+
+
+
+<h2>2. Tuples</h2>
+<p>Some basics with tuples.</p>
+
+
+<h3>Exercise 2.1 (1 points)</h3>
+<p>Create a tuple with &#8216;frog, 54, 4.77, fridge, 2&#8217;. Answer with the length of the tuple as an integer.</p>
+
+
+
+
+
+
+<h3>Exercise 2.2 (1 points)</h3>
+<p>Create a tuple out of:</p>
+
+<blockquote>
+  <p>(frog, 54, 4.77, fridge, 2).</p>
+</blockquote>
+
+<p>Assign each value in the tuple to different variables:</p>
+
+<blockquote>
+  <p>&#8216;a&#8217;,&#8217;b&#8217;,&#8217;c&#8217;,&#8217;d&#8217;,&#8217;e&#8217;.</p>
+</blockquote>
+
+<p>Answer with the variable: &#8216;d&#8217;.</p>
+
+
+
+
+
+
+<h3>Exercise 2.3 (1 points)</h3>
+<p>Use the list</p>
+
+<blockquote>
+  <p>[123, 4, 125, 69, 155]</p>
+</blockquote>
+
+<p>Assign the first two elements to a tuple with a slice on the list.</p>
+
+<p>Answer with the first element in the tuple as an integer.</p>
+
+
+
+
+
+
+<h3>Exercise 2.4 (1 points)</h3>
+<p>Create a tuple with</p>
+
+<blockquote>
+  <p>(123, 4, 125, 69, 155)</p>
+</blockquote>
+
+<p>Convert it to a list and replace the second element with:</p>
+
+<blockquote>
+  <p>3741</p>
+</blockquote>
+
+<p>Convert it back to a tuple and answer with the first three elements in a comma-separated string,  without an ending <code>,</code>.</p>
+
+
+
+
+
+
+
+<h2>3. Extra assignments</h2>
+<p>These questions are worth 3 points each. Solve them for extra points.</p>
+
+
+<h3>Exercise 3.1 (3 points)</h3>
+<p>Use a for-loop to walk through the original phonebook dictionary and create a string representing it. Each name and number should be on its own row, separated by a space. The names must come in alphabetical order. Note that every row should end with a newline character, <code>\n</code>.</p>
+
+<p>Answer with the resulting string.</p>
+
+
+
+
+
+
+<h3>Exercise 3.2 (3 points)</h3>
+<p>Convert the phonenumber to a string and add the prefix &#8216;+1-&#8216;, representing the language code, to each phone-number.</p>
+
+<p>Answer with the resulting dictionary.</p>
+
+
+
+
+
+
+
+<hr>
+<code>f60f1c9ce548d1bec995e3ff5b92a0cc</code>
+
+</body>
+</html>
